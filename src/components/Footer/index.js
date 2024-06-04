@@ -77,12 +77,12 @@ const SocialMediaIcon = styled.a`
   }
 `;
 
-const Copyright = styled.p`
-  margin-top: 1.5rem;
-  font-size: 0.9rem;
-  color: ${({ theme }) => theme.soft2};
-  text-align: center;
-`;
+// const Copyright = styled.p`
+//   margin-top: 1.5rem;
+//   font-size: 0.9rem;
+//   color: ${({ theme }) => theme.soft2};
+//   text-align: center;
+// `;
 
 function Footer() {
   return (
@@ -102,9 +102,9 @@ function Footer() {
           <SocialMediaIcon href={Bio.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
           <SocialMediaIcon href={Bio.insta} target="display"><InstagramIcon /></SocialMediaIcon>
         </SocialMediaIcons>
-        <Copyright>
+        {/* <Copyright>
           &copy; 2024 Abhranil Dey. All rights reserved.
-        </Copyright>
+        </Copyright> */}
 
       </FooterWrapper>
     </FooterContainer>

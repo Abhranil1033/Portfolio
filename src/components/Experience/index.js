@@ -50,17 +50,6 @@ margin-top: 20px;
   }
 `;
 
-const Desc = styled.div`
-    font-size: 18px;
-    text-align: center;
-    max-width: 600px;
-    color: ${({ theme }) => theme.text_secondary};
-    @media (max-width: 768px) {
-        margin-top: 12px;
-        font-size: 16px;
-    }
-`;
-
 const TimelineSection = styled.div`
     width: 100%;
     max-width: 1000px;
@@ -79,9 +68,6 @@ const index = () => {
         <Container id="experience">
             <Wrapper>
                 <Title>Experience</Title>
-                {/* <Desc>
-                    My work experience as a software engineer and working on different companies and projects.
-                </Desc> */}
                 <TimelineSection>
                     <Timeline>
                         {experiences.map((experience,index) => (

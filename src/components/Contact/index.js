@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
 
 const Container = styled.div`
 display: flex;
@@ -78,28 +77,15 @@ const ContactTitle = styled.div`
 const Contact = () => {
 
   //hooks
-  const [open, setOpen] = React.useState(false);
+  // const [open, setOpen] = React.useState(false);
   const form = useRef();
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    emailjs.sendForm('service_tox7kqs', 'template_nv7k7mj', form.current, 'SybVGsYS52j2TfLbi')
-      .then((result) => {
-        setOpen(true);
-        form.current.reset();
-      }, (error) => {
-        console.log(error.text);
-      });
-  }
-
-
-
+  
   return (
     <Container>
       <Wrapper>
         <Title>Contact</Title>
         <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
-        <ContactForm ref={form} onSubmit={handleSubmit}>
+        <ContactForm ref={form}>
           <ContactTitle>Email Me 🚀 @ </ContactTitle>
           <p style={{ color: 'white' }}>officialabhranil1033@gmail.com</p>
         </ContactForm>

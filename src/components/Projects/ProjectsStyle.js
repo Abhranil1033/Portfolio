@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import _default from '../../themes/default';
+// import _default from '../../themes/default';
 
 export const Container = styled.div`
     background: linear-gradient(343.07deg, rgba(132, 59, 206, 0.06) 5.71%, rgba(132, 59, 206, 0) 64.83%);
@@ -43,7 +43,6 @@ export const Desc = styled.div`
     font-size: 18px;
     text-align: center;
     max-width: 600px;
-    margin-bottom: 40px;
     color: ${({ theme }) => theme.text_secondary};
     @media (max-width: 768px) {
         margin-top: 12px;
